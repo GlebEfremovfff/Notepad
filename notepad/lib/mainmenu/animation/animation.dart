@@ -26,7 +26,6 @@ class _AnimationMailState extends State<AnimationMail> {
   }
 
   void handleTimeout() {
-    // callback function
     Navigator.push(
         context, MaterialPageRoute(builder: (BuildContext context) => Menu()));
   }
@@ -37,7 +36,6 @@ class _AnimationMailState extends State<AnimationMail> {
     super.initState();
   }
 
-  // loads a Rive file
   void _loadRiveFile() async {
     final bytes = await rootBundle.load(riveFileName);
     final file = RiveFile();
